@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-02T11:34:43Z" name="Default suite" finished-at="2021-07-02T11:35:13Z" duration-ms="29421">
+    <groups>
+    </groups>
+    <test started-at="2021-07-02T11:34:43Z" name="Default test" finished-at="2021-07-02T11:35:13Z" duration-ms="29421">
+      <class name="org.r3.seleniumpoc.pages.test.OrganizationsPageTest">
+        <test-method is-config="true" signature="preTest()[pri:0, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:34:43Z" name="preTest" finished-at="2021-07-02T11:34:48Z" duration-ms="4561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preTest -->
+        <test-method signature="addNewOrganization()[pri:0, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:34:48Z" name="addNewOrganization" description="verify if new organization has been added" finished-at="2021-07-02T11:34:52Z" duration-ms="4545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewOrganization -->
+        <test-method signature="goToSpecifiedOrganizations()[pri:1, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:34:52Z" name="goToSpecifiedOrganizations" description="Check we are able to navigate to specific organization" finished-at="2021-07-02T11:34:53Z" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSpecifiedOrganizations -->
+        <test-method signature="addNewCordappForOrganization()[pri:2, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:34:53Z" name="addNewCordappForOrganization" description="Check we are able to add new cordapp" finished-at="2021-07-02T11:34:56Z" duration-ms="3303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCordappForOrganization -->
+        <test-method signature="createNewNode()[pri:3, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:34:56Z" name="createNewNode" description="Check we are able to create new node and the go into that node" finished-at="2021-07-02T11:35:02Z" duration-ms="5898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewNode -->
+        <test-method signature="createNewIdentityForNode()[pri:4, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:35:02Z" name="createNewIdentityForNode" description="Check we are able to create new node and the go into that node" finished-at="2021-07-02T11:35:08Z" duration-ms="5771" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at org.r3.seleniumpoc.pages.test.OrganizationsPageTest.createNewIdentityForNode(OrganizationsPageTest.java:134)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewIdentityForNode -->
+        <test-method signature="deployNode()[pri:5, instance:org.r3.seleniumpoc.pages.test.OrganizationsPageTest@4278284b]" started-at="2021-07-02T11:35:08Z" name="deployNode" description="Check we are able to create new node and the go into that node" finished-at="2021-07-02T11:35:13Z" duration-ms="4584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deployNode -->
+      </class> <!-- org.r3.seleniumpoc.pages.test.OrganizationsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

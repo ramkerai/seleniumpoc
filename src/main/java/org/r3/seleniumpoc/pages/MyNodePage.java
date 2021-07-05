@@ -20,8 +20,8 @@ public class MyNodePage extends BrowserUtility {
 	
 	private static final By CREATE_NEW_IDENTITY_BUTTON_LOCATOR = By.xpath("//span[text() = 'Create New Identity']/..");
 	
-	private static final By ADD_APPLICATION_BUTTON_LOCATOR = By.xpath("//div[@data-tooltip = 'Add Applications']/../..");
-
+	//private static final By ADD_APPLICATION_BUTTON_LOCATOR = By.xpath("//div[@data-tooltip = 'Create Identity to add Applications']/../..");
+	private static final By ADD_APPLICATION_BUTTON_LOCATOR = By.id("addNodeApps");
 
 	public void createNewIdentity(String orgName, String orgUnit, String locality, String country, String email,
 			String network) throws InterruptedException {

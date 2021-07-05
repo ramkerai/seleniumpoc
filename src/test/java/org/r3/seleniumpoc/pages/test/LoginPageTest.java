@@ -7,6 +7,7 @@ import org.r3.seleniumpoc.pages.OrganizationsPage;
 import org.r3.seleniumpoc.pages.LoginPage;
 import org.r3.seleniumpoc.seleniumpoc.browser.utility.BrowserName;
 import org.r3.seleniumpoc.utility.TestUtility;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -37,8 +38,8 @@ public class LoginPageTest {
 	}
 	
 	
-	@BeforeMethod( enabled=false)
+	@AfterMethod( enabled=false)
 	public void tearDown() {
 		loginPage.closeBrowser();
-	}
+	} 
 }

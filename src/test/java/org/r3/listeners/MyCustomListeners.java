@@ -34,7 +34,8 @@ public class MyCustomListeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		extentTest.fail("Test has failed " + result.getMethod().getDescription());
-		BrowserUtility.takeScreenShotForPage(result.getMethod().getMethodName());
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+		BrowserUtility.takeScreenShotForPage(result.getMethod().getMethodName()+ timeStamp);
 		
 		
 	}

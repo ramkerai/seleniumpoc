@@ -16,11 +16,14 @@ import org.r3.seleniumpoc.pages.NodesPage;
 import org.r3.seleniumpoc.pages.OrganizationsPage;
 import org.r3.seleniumpoc.seleniumpoc.browser.utility.BrowserName;
 import org.r3.seleniumpoc.utility.TestUtility;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(org.r3.listeners.MyCustomListeners.class)
 public class OrganizationsPageTest {
 	
 	
@@ -44,6 +47,12 @@ public class OrganizationsPageTest {
 	    organizationPage = loginPage.submitLogin(username, password);
 	    uniqueId  = (int)(Math.random() * ( 1000 - 465 + 1) + 465);
 	    orgName = "Auto Test Org " + uniqueId;
+		
+	}
+	
+	@AfterClass( enabled=false)
+	public void teardown() throws InterruptedException {
+		organizationPage.closeBrowser();
 		
 	}
 

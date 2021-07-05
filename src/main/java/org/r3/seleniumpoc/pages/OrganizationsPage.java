@@ -11,12 +11,13 @@ public class OrganizationsPage extends BrowserUtility {
 	private static final By MENU_TOOLTIP_LOCATOR = By.xpath("//div[@data-tooltip =\"Menu\"]");
 	private static final By ORGANIZATION_TEXT_CHECK_LOCATOR = By.xpath("//div[text()=\"Organizations\"]");
 	private static final By ADMIN_PORTAL_LOCATOR = By.xpath("//span[@class=\"relative button-tertiary-text\"]");
-	private static final By CREATE_NEW_ORGANIZATION_LOCATOR = By.xpath("//span[text()=\"Create new Organization\"]/..");
+	private static final By CREATE_NEW_ORGANIZATION_LOCATOR = By.xpath("//span[text()=\"Create Organization\"]/..");
 
 	//span[text()="Create Organization"]/..
 	private static final By ORG_NAME_TEXT_LOCATOR =By.xpath("//input[@id = \"orgName\"]");
 	private static final By ORG_DESC_TEXT_LOCATOR =By.xpath("//input[@id = \"orgDescription\"]");
-	private static final By CREATE_ORGANIZATION_LOCATOR = By.xpath("//span[text()=\"Create Organization\"]/..");
+	//private static final By CREATE_ORGANIZATION_LOCATOR = By.xpath("//span[text()=\"Create Organization\"]/..");
+	private static final By CREATE_ORGANIZATION_LOCATOR = By.xpath("//button[@id = \"createOrgButton\"]");
 	
 	private static final By CONTAINER_LOCATOR = By.xpath("//div[@class = \"card-container\"]");
 	
